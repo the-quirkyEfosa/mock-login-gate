@@ -1,9 +1,10 @@
 // data storage
 const users = JSON.parse(localStorage.getItem("myProjectUsers")) || [];
 const currentUser = JSON.parse(localStorage.getItem("latestUser")) || [];
+const currentPage = window.location.pathname.split("/").pop();
 
 // Sign up page.
-if (window.location.pathname.endsWith("index.html")) {
+if (currentPage === "" || currentPage === "index.html") {
 
     const signUpUsername = document.querySelector("#signUpUsername");
     const signUpPassword = document.querySelector("#signUpPassword");
@@ -109,7 +110,7 @@ if (window.location.pathname.endsWith("index.html")) {
 
 }
 // Login page.
-else if (window.location.pathname.endsWith("login.html")) {
+else if (currentPage === "login.html") {
 
     const loginUsername = document.querySelector("#loginUsername");
     const loginPassword = document.querySelector("#loginPassword");
@@ -165,7 +166,7 @@ else if (window.location.pathname.endsWith("login.html")) {
 }
 
 // welcome page
-else if (window.location.pathname.endsWith("welcome.html")) {
+else if (currentPage === "welcome.html") {
     const welcomeName = document.querySelector("#welcomeName");
     const latestLoggedInUser = currentUser[0];
 
