@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Quirky: Login</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body>
+
+        <main>
+
+            <div class="container">
+                <div class="headerText">
+                    <h1 id="head1">Quirky</h1>
+
+                    <p class="description">Your world awaits <span>you.</span></p>
+                </div>
+                <form class="loginForm">
+
+                    <input type="text" id="loginUsername" placeholder="Username" name="username" required>
+
+                    <div class="showPassword">
+
+                        <div id="infoCheck">
+                            <input type="password" class="password" id="loginPassword" placeholder="Password" name="loginPassword" required>
+
+                            <span id="guide"></span>
+                        </div>
+
+                        <button type="button" class="showPasswordBtn btn3">Show</button>
+
+                    </div>
+
+                    <button id="loginBtn">Log In</button>
+
+                </form>
+
+            </div>
+
+        </main>
+
+        <footer class="footer">
+
+            <p>
+                Don't have an account? <a href="index.html" class="link">Sign Up.</a>
+            </p>
+
+        </footer>
+
+        <script src="script.js" defer></script>
+    </body>
+
+</html>
