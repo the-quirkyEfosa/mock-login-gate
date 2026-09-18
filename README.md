@@ -12,7 +12,7 @@ This project was built as my second major JavaScript project, with the goal of m
 
 **Live site:** [Add link]
 
-**Repository:** [the-quirkyEfosa/mock-login-gate](https://github.com/the-quirkyEfosa/mock-login-gate)]
+**Repository:** [the-quirkyEfosa/mock-login-gate](https://github.com/the-quirkyEfosa/mock-login-gate)
 
 ---
 
